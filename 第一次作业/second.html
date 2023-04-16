@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="Hang1">
+            <div class="hang1 tu"></div>
+            <div class="hang1 tu"></div>
+            <div class="hang1 tu"></div>
+            <div class="hang1 tu"></div>
+            <div class="hang1 tu"></div>
+            <div class="hang1 tu"></div>
+        </div>
+        <div class="Hang2">
+            <div class="hang2 tu"></div>
+            <div class="hang2 tu"></div>
+        </div>
+        <div class="Hang3">
+            <div class="hang3 tu"></div>
+            <div class="hang3 tu"></div>
+            <div class="hang3 tu"></div>
+        </div>
+    </div>
+</body>
+<style>
+    .grid {
+        width: 500px;
+        height: 600px;
+    }
+
+    .Hang1 {
+        display: grid;
+        height: 200px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .Hang2 {
+        display: grid;
+        height: 200px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Hang3 {
+        display: grid;
+        height: 200px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tu {
+        background-image: url('./gou.jpg');
+        background-size: 100% 100%;
+    }
+</style>
+
+</html>
